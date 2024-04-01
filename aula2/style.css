@@ -1,1 +1,57 @@
 @charset "UTF-8";
+* {
+    margin: 0;
+}
+header {
+    padding: 20px;
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+body {
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+ul {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+a::after {
+    cursor: pointer;
+}
+
+p {
+    height: 300px;
+    font-size: 25px;
+    padding: 20px;
+    background-color: white;
+    
+}
+
+#pfooter {
+    background-color: rgb(243, 159, 187);
+}
+footer {
+    margin-top: 300px;
+    padding: 10px;
+}

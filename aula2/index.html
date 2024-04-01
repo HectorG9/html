@@ -3,58 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 2</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Aula 2</title>g
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: 'Courier New', Courier, monospace;
         }
+
         header  {
             height:100px;
             background-color: beige;
-            padding: 30px;
-            margin: 10px;
         }
+
         #minhaloja {
             font-size: 30px;
             text-align: center;
-            border: 5px solid black;
+            color: black;
             padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu ul {
+            display: flex;
+            gap: 100px;
+            list-style: none;
+        }
+        nav {
+            justify-content: space-evenly;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+        }
+        a::after {
+            cursor: pointer;        
         }
         main {
             height: 400px;
             background-color: beige;
             margin: 10px;
+            padding: 25px;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        #divmain {
+            display: flex;
+            justify-content: center; 
+            gap: 100px;
+        }
+
+        #pmain {
+            background-color: white;
+            margin: 1%;
             padding: 15px;
         }
-        p {
+
+        #pfooter {
+            border: 2px solid black;
+            padding: 15px;
             background-color: white;
-            margin: 0%;
-            padding: 0px;
         }
+
         footer {
-            border: 4px solid black;
             height: 330px;
             background-color: palevioletred;
-            padding: 15px;
+            padding: 25px;
             margin: 10px;
         }
-       
     </style>
 </head>
 <body>
     <header>
         <h1 id="minhaloja">Minha Lojinha</h1>
-        <nav>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" target="_blank">HOME</a></li>
+                <li><a href="index2.html">SOBRE</a></li>
+                <li><a href="#" target="_blank">CONTATO</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <h2>Seção Principal</h2>
-        <img src="imagens/sol-celular.webp" width="200px" alt="">
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Dolores nam libero eligendi veniam minima distinctio repellendus quis? Quidem et, optio aliquam fuga sapiente sint voluptates, minus dolorum a totam veritatis.
-        </p>
+        <div id="divmain">
+            <img src="imagens/sol-celular.webp" width="200px" alt="">
+            <p id="pmain">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolores nam libero eligendi veniam minima distinctio repellendus quis? Quidem et, optio aliquam fuga sapiente sint voluptates, minus dolorum a totam veritatis.
+            </p>
+        </div>
         <section>
             <aside>
 
@@ -63,7 +112,7 @@
     </main>
     <footer>
         <h2>Conteúdo Rodapé</h2>
-        <p>
+        <p id="pfooter">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quis eum minima aut odit perspiciatis fugit ad aperiam distinctio vel. Quis nobis explicabo quae qui ut. Earum nesciunt officiis obcaecati.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis, ipsam nihil, consequuntur qui aliquid est accusantium expedita illum et earum dignissimos soluta nesciunt modi? Qui animi excepturi hic ut?
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam nulla minima molestias ratione voluptatum rem laudantium unde, quasi repellat, possimus harum ab qui beatae inventore ducimus. Nisi, deserunt porro.
