@@ -36,26 +36,31 @@
             gap: 100px;
             list-style: none;
         }
+
         nav {
             justify-content: space-evenly;
         }
+
         a {
             text-decoration: none;
             color: black;
             font-size: 25px;
         }
+
         a::after {
             cursor: pointer;        
         }
+
         a:hover {
             color: rgb(0, 9, 128);
-            border: 1px solid rgb(3, 71, 3);
+            border: 2px solid green;
             background-color: rgba(128, 252, 128, 0.253);
             border-radius: 10px;
-            transition-duration: 2s; 
+            transition-duration: 0.5s; 
         }
+
         main {
-            height: 400px;
+            height: 500px;
             background-color: beige;
             margin: 10px;
             padding: 25px;
@@ -65,10 +70,23 @@
             width: 200px;
         }
 
-        #divmain {
+        #secPrincipal {
             display: flex;
             justify-content: center; 
             gap: 100px;
+        }
+
+        #secSecondary {
+            background-color: coral;
+            padding: 15px;
+            color: antiquewhite;
+            gap: 50px
+        }
+
+        #sec1 {
+            gap: 10px;
+            display: flex;
+            justify-content: space-between;
         }
 
         #pmain {
@@ -77,6 +95,7 @@
             padding: 15px;
             border-radius: 5px;
             border: 2px solid black;
+            box-shadow: inset  2px 2px 2px 2px rgba(0, 0, 0, 0.397);
         }
 
         #pfooter {
@@ -107,28 +126,25 @@
     </header>
     <main>
         <section>
-            <section>
-            
-            </section>
-    
-            
-        
             <h2>Seção Principal</h2>
-            <div id="divmain">
+            <div id="secPrincipal">
                 <img src="imagens/sol-celular.webp" width="200px" alt="">
                 <p id="pmain">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Dolores nam libero eligendi veniam minima distinctio repellendus quis? Quidem et, optio aliquam fuga sapiente sint voluptates, minus dolorum a totam veritatis.
                 </p>
-            </div>
-            <section>
+            </div> 
+           
+            <section id="secSecondary">
                 <h2>Seção secundária</h2>
-                <div>
-                    <div id="div1">
-                        Conteúdo da primeira coluna
+                <div id="sec1">
+                    <div>
+                        <h3>Conteúdo da primeira coluna</h3>    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatibus, autem voluptas quasi sunt aut nemo non illo, nam ullam, dolorum deleniti fuga ad iusto enim eius magni quae earum.</p>
                     </div>
                     <div>
-                        Conteúdo da segunda coluna
+                        <h3>Conteúdo da segunda coluna</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, ipsam necessitatibus expedita sint voluptatum nemo exercitationem porro, non quis atque assumenda consectetur natus sapiente unde aliquam nesciunt illo quia eum.</p>
                     </div>
                 </div>
             </section>
