@@ -2,6 +2,7 @@
 * {
     margin: 0;
 }
+
 header {
     padding: 20px;
     background-color: beige;
@@ -23,6 +24,7 @@ main {
     padding: 10px;
     margin-bottom: 0px;
 }
+
 ul {
     display: flex;
     gap: 10px;
@@ -39,6 +41,7 @@ a {
 a::after {
     cursor: pointer;
 }
+
 a:hover {
     color: green;
     border: 2px solid green;
@@ -46,6 +49,7 @@ a:hover {
     border-radius: 10px;
     transition-duration: 0.5s; 
 }
+
 #pmain {
     height: 300px;
     font-size: 25px;
@@ -63,6 +67,7 @@ a:hover {
     border-radius: 5px;
     background-color: white;
 }
+
 footer { 
     background-color: palevioletred;
     margin-top: 300px;
