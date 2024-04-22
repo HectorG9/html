@@ -68,7 +68,10 @@ p {
     width: 200px;
     padding: 20px;
 }
-
+#cima {
+    background-color: rgb(201, 8, 8);
+    color: white;
+}
 #meio {
     background-color: rgb(243, 58, 58);
     color: white;
